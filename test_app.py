@@ -24,10 +24,10 @@ class TestApp(unittest.TestCase):
 #    def test_02_multiprocessing(self):
 #        response = multiprocessing_test.multiprocessing_test()
 #        self.assertEqual(response, True)
-		
+        
     # def test_02_kaisar_1184093(self):
-    #     from Chapter02.Kaisar1184093 import main	
-    #     response = 	main()
+    #     from Chapter02.Kaisar1184093 import main  
+    #     response =    main()
     #     self.assertEqual(response, True)
     
     # def test_02_rizaluardi_1184102(self):
@@ -39,7 +39,7 @@ class TestApp(unittest.TestCase):
     def readfile(self,filename):
         f = open(filename, "r")
         return str(f.read())
-        f.close()	
+        f.close()   
 
        
     # def test_07_zanwarTujuh1184050(self):
@@ -76,7 +76,7 @@ class TestApp(unittest.TestCase):
     #     respon=self.readfile('./Chapter02/minuman.txt')
     #     self.assertNotRegex(respon, "Gak Boleh Kosong")
 
-	
+    
     # def test_03_hanifTiga1184058(self):
     #     from Chapter02.HanifTiga1184058 import hanifTiga1184058, hanifRename
     #     threadrename= hanifRename("Thread rename file ",1 , 'nilai')
@@ -89,7 +89,7 @@ class TestApp(unittest.TestCase):
     #     self.assertNotRegex(respon, "Kosong")
     # def readfile(self,nfile):
     #     f = open(nfile, "r+")
-    #     return str(f.read())	
+    #     return str(f.read())  
        
        
     # def test_03_raviTiga1184040(self):
@@ -113,7 +113,7 @@ class TestApp(unittest.TestCase):
 
     #     respon=self.readfile('./Chapter02/minuman.txt')
     #     self.assertNotRegex(respon, "Gak Boleh Kosong")
-	
+    
     # def test_03_hanifTiga1184058(self):
     #     from Chapter02.HanifTiga1184058 import hanifTiga1184058, hanifRename
     #     threadrename= hanifRename("Thread rename file ",1 , 'nilai')
@@ -127,7 +127,7 @@ class TestApp(unittest.TestCase):
     #
     def readfile(self,nfile):
         f = open(nfile, "r+")
-        return str(f.read())	
+        return str(f.read())    
        
     # def test_03_raviTiga1184040(self):
     #     from Chapter02.raviTiga1184040 import raviTiga1184040, raviMenulis 
@@ -189,17 +189,6 @@ class TestApp(unittest.TestCase):
     #def test_06_alif_1184068(self):
     #    from Chapter02.AlifEnam1184068 import main
     #    response =  main()
-    #    self.assertEqual(response, True)
-    
-
-    #def test_06_parhan_1184042(self):
-        #from Chapter02.ParhanEnam1184042 import main
-        #response =  main()
-        #self.assertEqual(response, True)
-        
-    #def test_06_kaisar_1184093(self):
-    #    from Chapter02.KaisarEnam1184093 import main
-     #   response =  main()
     #    self.assertEqual(response, True)
     
 
@@ -389,18 +378,28 @@ class TestApp(unittest.TestCase):
     #     respon=self.readfile('./Chapter02/AriyoTujuh')
     #     self.assertNotRegex(respon, "Kosong")
 
-    #def test_07_bahartujuh1184002(self):
-       # from Chapter02.bahartujuh1184002 import BaharQue,Bahartujuh1184002
-        #ti= BaharQue("Thread 1 ",'kodepos')
-        #tl = Bahartujuh1184002("Thread 2",'kodepos')
-       # ti.start()
-       # tl.start()
-       # ti.join()
-       # tl.join()
-       # respon=self.readfile('./Chapter02/kodepos')
-       # self.assertNotRegex(respon, "Gak Boleh Kosong")
+    # def test_07_bahartujuh1184002(self):
+    #     from Chapter02.bahartujuh1184002 import BaharQue,Bahartujuh1184002
+    #     ti= BaharQue("Thread 1 ",'kodepos')
+    #     tl = Bahartujuh1184002("Thread 2",'kodepos')
+    #     ti.start()
+    #     tl.start()
+    #     ti.join()
+    #     tl.join()
+    #     respon=self.readfile('./Chapter02/kodepos')
+    #     self.assertNotRegex(respon, "Gak Boleh Kosong")
 
-       def test_07_kaisarTujuh1184093(self):
+    #def test_07_parhanTujuh1184042(self):
+      #  from Chapter02.ParhanTujuh1184042 import parhanTujuh1184042,parhanmanajemenFile 
+      #  threadutama = parhanTujuh1184042("Thread Utama ", 2,5,5,'apigempa')
+      #  threadmanajemen= parhanmanajemenFile("Thread manajemen File ", 1,'apigempa')
+      #  threadmanajemen.start()
+      #  threadutama.start()
+      #  threadmanajemen.join()
+       # threadutama.join()
+      #  respon=self.readfile('./Chapter02/apigempa.txt')
+      #  self.assertNotRegex(respon, "kosong")
+      def test_07_kaisarTujuh1184093(self):
         from Chapter02.KaisarTujuh1184093 import Kaisar, Abdan
         threadK = Kaisar("Thread Kaisar", 1)
         threadA = Abdan("Thread Abdan", 2, "digi")
