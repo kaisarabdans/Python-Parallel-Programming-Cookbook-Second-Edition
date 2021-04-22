@@ -125,9 +125,9 @@ class TestApp(unittest.TestCase):
     #     respon=self.readfile('./nilai.txt')
     #     self.assertNotRegex(respon, "Kosong")
     #
-    def readfile(self,nfile):
-        f = open(nfile, "r+")
-        return str(f.read())    
+    #def readfile(self,nfile):
+       # f = open(nfile, "r+")
+        #return str(f.read())    
        
     # def test_03_raviTiga1184040(self):
     #     from Chapter02.raviTiga1184040 import raviTiga1184040, raviMenulis 
@@ -399,13 +399,14 @@ class TestApp(unittest.TestCase):
        # threadutama.join()
       #  respon=self.readfile('./Chapter02/apigempa.txt')
       #  self.assertNotRegex(respon, "kosong")
-      def test_07_kaisarTujuh1184093(self):
-        from Chapter02.KaisarTujuh1184093 import Kaisar, Abdan
-        threadK = Kaisar("Thread Kaisar", 1)
-        threadA = Abdan("Thread Abdan", 2, "digi")
-        threadK.start()
-        threadA.start()
-        threadK.join()
-        threadA.join()
-        respon=self.readfile('./Chapter02/digi.txt')
-        self.assertRegex(respon, "Koromon")
+     
+        def test_07_kaisarTujuh1184093(self):
+          from Chapter02.KaisarTujuh1184093 import Kaisar, Abdan
+          threadK = Kaisar("Thread Kaisar", 1)
+          threadA = Abdan("Thread Abdan", 2, "digi")
+          threadK.start()
+          threadA.start()
+          threadK.join()
+          threadA.join()
+          respon=self.readfile('./Chapter02/digi.txt')
+          self.assertRegex(respon, "Koromon")
